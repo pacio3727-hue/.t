@@ -1,2 +1,332 @@
-# katalog-jednorazowek.
-Jednorazówki 
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Katalog Jednorazówek</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#0e0e0e;
+  color:#eaeaea;
+}
+header{
+  background:#000;
+  padding:25px;
+  text-align:center;
+  border-bottom:1px solid #222;
+}
+.products{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+  padding:20px;
+}
+.card{
+  background:#161616;
+  border-radius:14px;
+  overflow:hidden;
+  box-shadow:0 6px 18px rgba(0,0,0,.6);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+}
+.card img{
+  width:100%;
+  height:230px;
+  object-fit:cover;
+}
+.content{
+  padding:15px;
+}
+h3{
+  margin:0 0 6px;
+  color:#fff;
+}
+.meta{
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:8px;
+}
+.content ul{
+  padding-left:18px;
+  margin:0;
+  font-size:13px;
+  color:#bbb;
+  max-height:180px;
+  overflow-y:auto;
+}
+footer{
+  text-align:center;
+  font-size:12px;
+  color:#777;
+  padding:15px;
+  border-top:1px solid #222;
+}
+
+/* 18+ */
+#ageOverlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.95);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+  opacity:1;
+  transition: opacity 0.3s ease;
+}
+.ageBox{
+  background:#111;
+  padding:30px;
+  border-radius:14px;
+  max-width:420px;
+  text-align:center;
+  border:1px solid #333;
+}
+.ageBox button{
+  margin-top:15px;
+  padding:10px 20px;
+  font-weight:bold;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div id="ageOverlay">
+  <div class="ageBox">
+    <h2>🔞 Ostrzeżenie</h2>
+    <p>
+      Strona zawiera informacje o produktach nikotynowych.<br>
+      Tylko dla osób pełnoletnich (18+).<br>
+      Nikotyna jest substancją silnie uzależniającą.
+    </p>
+    <button onclick="acceptAge()">Mam ukończone 18 lat</button>
+  </div>
+</div>
+
+<header>
+  <h1>Jednorazowe e-papierosy</h1>
+  <p>Katalog modeli i dostępnych smaków</p>
+</header>
+
+<section class="products">
+
+<!-- MODEL 1 -->
+<div class="card">
+<img src="model1.jpg" alt="Merryblade" loading="lazy">
+<div class="content">
+<h3>Merryblade</h3>
+<div class="meta">30000 puff • 5% • regulacja mocy 10–26W</div>
+<ul>
+<li>Prime Strawberry</li><li>Kiwi Passion Fruit Guava</li><li>Aloe Blackcurrant</li>
+<li>Lush Ice</li><li>Peach Lemonade</li><li>Strawberry Raspberry Cherry Ice</li>
+<li>Mixed Berries</li><li>Red Energy Ice</li><li>Dragon Fruit Ice</li>
+<li>Sunset Lime</li><li>Honey Peach</li><li>Green Apple</li>
+<li>Frozen Grape</li><li>Fizzy Cherry</li><li>Crazy Blueberry</li>
+<li>Grapefruit Refresher</li><li>Aperol</li><li>Desert Candy</li>
+<li>Vimto</li><li>Breezy Lemon Berry</li><li>Summer Blaze</li>
+<li>Tropical Citrus Fizz</li><li>Mr. Blue</li><li>Fanta</li>
+<li>Love 66</li><li>Lemon Mojito</li><li>Jager Red Energy</li>
+<li>Orange Dragon</li><li>Iced Peach Melon</li><li>Dr Pepper</li>
+<li>Grape Berry</li><li>Peach Guava</li><li>Forest Berries</li>
+<li>Wicks</li><li>Wilderness Forest</li><li>Grape Slush</li>
+</ul>
+</div>
+</div>
+
+<!-- MODEL 2 -->
+<div class="card">
+<img src="model2.jpg" alt="ETS Dual Galaxy" loading="lazy">
+<div class="content">
+<h3>ETS Dual Galaxy</h3>
+<div class="meta">30000 puff • 5% • dual flavor</div>
+<ul>
+<li>Juicy Peach / Double Apple</li>
+<li>Blackberry Gum / Fresh Mint Gum</li>
+<li>Blueberry Raspberry / Strawberry Ice</li>
+<li>Watermelon Ice / Triple Melon</li>
+<li>Passion Berry / Cherry Ice</li>
+<li>Lemon Lime / Pink Lemon</li>
+<li>Mr Black / Blue Razz Ice</li>
+<li>Apple Peach / Mango Peach</li>
+<li>Cherry Cola Ice / Watermelon Cherry</li>
+</ul>
+</div>
+</div>
+
+<!-- MODEL 3 -->
+<div class="card">
+<img src="model3.jpg" alt="MerryMi M-Mecha" loading="lazy">
+<div class="content">
+<h3>MerryMi M-Mecha</h3>
+<div class="meta">16000 puff • 3%</div>
+<ul>
+<li>Watermelon Ice</li><li>Strawberry Kiwi</li><li>Pink Peach</li>
+<li>Black Cherry Lime</li><li>Cactus Candy</li><li>Lychee Ice</li>
+<li>Blue Razz Ice</li><li>Sour Apple</li><li>Grape Ice</li>
+<li>Cherry Cola</li><li>Dragon Fruit Ice</li><li>Mix Berries</li>
+<li>Red Energy Ice</li><li>Mr Blue</li><li>Love 66</li>
+<li>Vimto</li><li>Fanta</li><li>Dr Pepper</li>
+</ul>
+</div>
+</div>
+
+<!-- MODEL 4 -->
+<div class="card">
+<img src="model4.jpg" alt="MerryMi 20000" loading="lazy">
+<div class="content">
+<h3>MerryMi 20000</h3>
+<div class="meta">20000 puff • 5%</div>
+<ul>
+<li>Blackcurrant Dragon Fruit</li><li>Mixed Berry</li><li>Blueberry Raspberry</li>
+<li>Kiwi Passion Fruit Guava</li><li>Love 66</li><li>Summer Blaze</li>
+<li>Red Energy Ice</li><li>Cactus Candy</li><li>Vimto</li>
+<li>Watermelon Ice</li><li>Prime Strawberry</li><li>Lemon Mojito</li>
+</ul>
+</div>
+</div>
+
+<!-- MODEL 5 -->
+<div class="card">
+<img src="model5.jpg" alt="MerryMi Mecha Pro" loading="lazy">
+<div class="content">
+<h3>MerryMi Mecha Pro</h3>
+<div class="meta">35000 puff • 5%</div>
+<ul>
+<li>Cactus Candy</li><li>White Peach Berries</li><li>Summer Blaze</li>
+<li>Watermelon Ice</li><li>Blue Razz Ice</li><li>Jager Red Energy</li>
+<li>Blueberry Cherry Cranberry</li><li>Fanta</li><li>Vimto</li>
+</ul>
+</div>
+</div>
+
+<!-- MODEL 6 -->
+<div class="card">
+<img src="model6.jpg" alt="Airmez Fox 4in1" loading="lazy">
+<div class="content">
+<h3>Airmez Fox 4in1</h3>
+<div class="meta">120000 puff • 2% • 4 smaki</div>
+<ul>
+<li>Strawberry / Kiwi / Ice / Peach Mango</li>
+<li>Pink Lemonade / Mixed Berries</li>
+<li>Love 66 / Blueberry On Ice</li>
+<li>Mango Peach / Sour Mango</li>
+</ul>
+</div>
+</div>
+
+<!-- MODEL 7 -->
+<div class="card">
+<img src="model7.jpg" alt="Tornado" loading="lazy">
+<div class="content">
+<h3>Tornado</h3>
+<div class="meta">15000 puff • 5% / 2%</div>
+<ul>
+<li>Kiwi Passion Fruit Guava</li><li>Grape Ice</li>
+<li>Blueberry On Ice</li><li>Dragon Fruit</li>
+<li>Mixed Berry</li><li>Blue Razz Lemonade</li>
+</ul>
+</div>
+</div>
+
+<!-- MODEL 8 -->
+<div class="card">
+<img src="model8.jpg" alt="Fumot Tornado" loading="lazy">
+<div class="content">
+<h3>Fumot Tornado</h3>
+<div class="meta">20000 puff • 5%</div>
+<ul>
+<li>Blueberry Raspberry Hard Candy</li>
+<li>Strawberry Kiwi</li><li>Skittles</li>
+<li>Watermelon Ice</li><li>Mr Blue</li>
+<li>Cherry Cola</li><li>Cool Mint</li>
+</ul>
+</div>
+</div>
+
+<!-- MODEL 9 -->
+<div class="card">
+<img src="model9.jpg" alt="Fumot Digital Monkey" loading="lazy">
+<div class="content">
+<h3>Fumot Digital Monkey</h3>
+<div class="meta">40000 puff • 5%</div>
+<ul>
+<li>Banana Ice</li><li>Strawberry Watermelon</li>
+<li>Blueberry Raspberry</li><li>Pink Lemonade</li>
+<li>Cherry Bomb</li><li>Double Apple</li>
+</ul>
+</div>
+</div>
+
+<!-- MODEL 10 -->
+<div class="card">
+<img src="model10.jpg" alt="Movkin Tycoon" loading="lazy">
+<div class="content">
+<h3>Movkin Tycoon</h3>
+<div class="meta">40000 puff • 5% • tryby ICE & nikotyny</div>
+<ul>
+<li>Watermelon Strawberry</li><li>Blueberry Blackberry</li>
+<li>Miami Mint</li><li>Sour Mango Pineapple</li>
+<li>Blue Razz Ice</li><li>Juicy Peach</li>
+</ul>
+</div>
+</div>
+
+<!-- MODEL 11 -->
+<div class="card">
+<img src="model11.jpg" alt="RandM Tornado 60k 3in1" loading="lazy">
+<div class="content">
+<h3>RandM Tornado 60k 3in1</h3>
+<div class="meta">60000 puff • 5% • 3 smaki</div>
+<ul>
+<li>Watermelon Ice / Strawberry Red Bull / Strawberry Kiwi</li>
+<li>Mango Ice / Banana Ice / Blue Razz Lemonade</li>
+<li>Grape Ice / Cherry Ice / Blue Sour Raspberry</li>
+</ul>
+</div>
+</div>
+
+<!-- MODEL 12 -->
+<div class="card">
+<img src="model12.jpg" alt="WGA Crystal Plus" loading="lazy">
+<div class="content">
+<h3>WGA Crystal Plus</h3>
+<div class="meta">20000 puff • 5% • 2 smaki</div>
+<ul>
+<li>Blue Razz Gummy / Blue Raspberry</li>
+<li>Strawberry Ice Cream / Strawberry Banana</li>
+<li>Heisenberg / Pinkman</li>
+<li>Cherry Ice / Orange Ice</li>
+</ul>
+</div>
+</div>
+
+</section>
+
+<footer>
+© 2026 • Katalog jednorazowych e-papierosów • 18+
+</footer>
+
+<script>
+function acceptAge(){
+  localStorage.setItem("ageAccepted","yes");
+  const overlay = document.getElementById("ageOverlay");
+  overlay.style.opacity = 0;
+  setTimeout(() => overlay.style.display="none", 300);
+}
+if(localStorage.getItem("ageAccepted")==="yes"){
+  document.getElementById("ageOverlay").style.display="none";
+}
+</script>
+
+</body>
+</html>

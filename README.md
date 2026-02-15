@@ -1,4 +1,4 @@
-<!<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pl">
 <head>
 <meta charset="UTF-8">
@@ -107,7 +107,7 @@ footer{text-align:center;font-size:12px;color:#777;padding:15px;border-top:1px s
 <li>Grapefruit Refresher</li><li>Grape Berry</li>
 </ul>
 </div>
-
+</div>
 
 <!-- MODEL 5 -->
 <div class="card">

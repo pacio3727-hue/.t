@@ -108,15 +108,7 @@ footer{text-align:center;font-size:12px;color:#777;padding:15px;border-top:1px s
 </ul>
 </div>
 
- <!-- MODEL 4 -->
-<div class="card">
-<img src="https://mega-jednorazówki.pl/images/MerryMi_Panda_X_40K_Polska_Jednorazowki_E_papieros_Crazy_Blueberry.png" alt="MerryMi Panda X " loading="lazy">
-<div class="content">
-<h3>Merrymi Panda X</h3>
-<div class="meta">40000 puff • 5%</div>
-<ul>
 
-  
 <!-- MODEL 5 -->
 <div class="card">
 <img src="https://vapemvps.com/cdn/shop/files/merry-mi-mecha-pro-20k-puffs-fanta-vapemvps.jpg?v=1763392696" alt="MerryMi Mecha Pro" loading="lazy">

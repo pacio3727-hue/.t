@@ -149,7 +149,9 @@ footer{text-align:center;font-size:12px;color:#777;padding:15px;border-top:1px s
 <li>Cherry / Love 66 / Berry Lemonade / Grape Ice</li>
 </ul>
 </div>
-</div><!-- MODEL 7 -->
+</div>
+
+<!-- MODEL 7 -->
 <div class="card">
 <img src="https://www.randmvape-shop.net/cdn/shop/files/RandMTornado15000.png?v=1748017766&width=1080" alt="Tornado" loading="lazy">
 <div class="content">
@@ -236,7 +238,9 @@ footer{text-align:center;font-size:12px;color:#777;padding:15px;border-top:1px s
 <li>Double Apple</li>
 </ul>
 </div>
-</div><!-- MODEL 10 -->
+</div>
+
+<!-- MODEL 10 -->
 <div class="card">
 <img src="https://szfumotvape.com/wp-content/uploads/2025/10/fumot-vape-heating-cores.webp" alt="Movkin Tycoon" loading="lazy">
 <div class="content">
